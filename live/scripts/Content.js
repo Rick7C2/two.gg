@@ -1,0 +1,1 @@
+!function(n,t,d){"use strict";n.Content={load:function(n,t,o){var a=d(n);if(o=o||"loaded",0!==a.length)return d.ajax({url:t}).done(function(n){a.append(d.trim(n)),a.addClass(o)})}}}(window,document,$);

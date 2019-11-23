@@ -1,0 +1,1 @@
+!function(t,e){t(e).ready(function(){var e=t("#stream");e.find("iframe,video").each(function(){var e=t(this);e.attr("height","100%")})})}(jQuery,document);

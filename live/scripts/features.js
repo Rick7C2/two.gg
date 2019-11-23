@@ -1,0 +1,1 @@
+!function(t){var a=window.location.pathname;"/"===a.charAt(0)&&(a=a.substr(1));var n="/features?path_match="+encodeURIComponent(a);t.load(".features",n)}(Content);

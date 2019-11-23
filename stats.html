@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'http://query.yahooapis.com/v1/public/yql',
+          data: { 
+            q: "select * from csv where url='https://royaleapi.com/clan/98C8UL2G/csv' and columns='tag,name,role,expLevel,trophies,arena_id,arena_name,clanRank,previousClanRank,donations,donationsReceived,clanChestPoints'",
+            format: 'json'
+          },
+          dataType: 'jsonp',
+          success: function(rsp) {
+            console.log(rsp);
+            // iterate over rsp.query.results.row (an array)
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
